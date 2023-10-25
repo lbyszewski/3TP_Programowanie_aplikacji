@@ -61,10 +61,24 @@ namespace C_
             }
 
             Console.WriteLine("suma elementów tablicy wynosi" + " " +  suma);
+            
+            
+            // object and references, inlcude methods and fields 
+            Somthing somthing = new Somthing("Alan","Mackwak");
+            somthing.firstName = "Abdul";
+            somthing.lastName = "Mohamed";
+            double retunSomeValue = somthing.someMethReturnSomthing(5);
+            
+
+
+            Console.WriteLine("podana wartość zwraca liczbę: " + " " + retunSomeValue);
+            somthing.showSomething();
+
 
             // before console close
-
             Console.ReadKey();
+
+
 
 
 
